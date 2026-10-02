@@ -1,0 +1,36 @@
+# Created by venv; see https://docs.python.org/3/library/venv.html
+
+# Python cache
+__pycache__/
+
+# Virtual environment
+.venv/
+myvenv/
+env/
+
+# PyTest
+.pytest_cache/
+
+# Coverage
+.coverage
+htmlcov/
+
+# Test reports
+reports/
+allure-results/
+allure-report/
+
+# IDE
+.vscode/
+.idea/
+
+# Environment/secrets
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
