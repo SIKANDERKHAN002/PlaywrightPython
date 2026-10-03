@@ -6,7 +6,7 @@ def setup():
     print("This is my setup")
     print("chrome")
     yield
-    print("firefox")
+    print("firefox after yield")
 
 def test_print_hi_one(setup):
     print("Hello World One")
