@@ -17,4 +17,5 @@ def test_print_hi_two(setup):
     print("Hello World Two")
 
 def test_print_hi_three(setup):
-    print("Hello World Three")
+    print("Hello World Three from workspace")
+    print("Hello World Three from workspace2")
