@@ -28,3 +28,8 @@ def test_verify_pwlocators(page: Page):
     # 3) page.get_by_role()
     page.get_by_role("button",name=" Login ").click()
     page.wait_for_timeout(5000)
+    
+    # 4) page.get_by_text()
+    #expect(page.get_by_text("get_by_text")).to_have_text("Home")
+    dashboard_text = page.get_by_role("heading",name="Dashboard").inner_text()
+    print(f"This is extracted {dashboard_text}")
