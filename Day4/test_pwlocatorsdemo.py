@@ -29,7 +29,13 @@ def test_verify_pwlocators(page: Page):
     page.get_by_role("button",name=" Login ").click()
     page.wait_for_timeout(5000)
     
-    # 4) page.get_by_text()
+    # 4) page.get_by_role()
     #expect(page.get_by_text("get_by_text")).to_have_text("Home")
     dashboard_text = page.get_by_role("heading",name="Dashboard").inner_text()
     print(f"This is extracted {dashboard_text}")
+    
+    # 5) page.get_by_alt_text()
+    logo_orangeHRM = page.get_by_alt_text("lient brand banner")
+    expect(logo_orangeHRM).to_be_visible()
+    
+    
