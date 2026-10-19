@@ -36,6 +36,6 @@ def test_verify_pwlocators(page: Page):
     
     # 5) page.get_by_alt_text()
     logo_orangeHRM = page.get_by_alt_text("lient brand banner")
-    expect(logo_orangeHRM).to_be_visible()
+    expect(logo_orangeHRM).to_be_visible()s#Need to remove
     
     
