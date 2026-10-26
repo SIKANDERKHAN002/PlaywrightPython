@@ -13,7 +13,7 @@ from playwright.sync_api import Page, expect
 
 
 def test_verify_pwlocators(page: Page):
-    # page.goto("https://demo.nopcommerce.com/",wait_until="domcontentloaded")
+    #page.goto("https://demo.nopcommerce.com/",wait_until="domcontentloaded")
     page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login",wait_until="domcontentloaded")
     page.wait_for_timeout(5000)  # 500 ms = 5 secs
     
@@ -35,7 +35,10 @@ def test_verify_pwlocators(page: Page):
     print(f"This is extracted {dashboard_text}")
     
     # 5) page.get_by_alt_text()
-    logo_orangeHRM = page.get_by_alt_text("lient brand banner")
-    expect(logo_orangeHRM).to_be_visible()s#Need to remove
+    logo_orangeHRM = page.get_by_alt_text("client brand banner")
+    expect(logo_orangeHRM).to_be_visible()#s#Need to remove
+    #added for removal
     
-    
+    #6) page.get_by_text()
+    page.get_by_role("presentation",name="Admin").click()
+    page.wait_for_timeout(5000)
