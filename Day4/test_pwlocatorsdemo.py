@@ -39,6 +39,9 @@ def test_verify_pwlocators(page: Page):
     expect(logo_orangeHRM).to_be_visible()#s#Need to remove
     #added for removal
     
+    #Will comeback at this stage.
     #6) page.get_by_text()
     page.get_by_role("presentation",name="Admin").click()
     page.wait_for_timeout(5000)
+    
+    
